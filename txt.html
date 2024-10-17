@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faizan-ul-Hassan's Cyber Security Portfolio">
+    <title>Faizan-ul-Hassan | Cyber Security Professional</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #000;
+            color: #f0f0f0;
+            overflow-x: hidden;
+            transition: background-color 0.5s, color 0.5s;
+            animation: fadeIn 1s;
+        }
+
+        /* Light Mode Styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(145deg, #1a1a1a, #333);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            animation: slideIn 1s ease forwards;
+        }
+        body.light-mode .container {
+            background: linear-gradient(145deg, #f7f7f7, #e0e0e0);
+        }
+
+        /* Slide In Animation */
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Header */
+        header h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            background: linear-gradient(90deg, #0073e6, #00e6e6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGlow 1.5s infinite alternate;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #ccc;
+            transition: transform 0.3s;
+        }
+        header p:hover {
+            transform: scale(1.05);
+        }
+        body.light-mode header h1 {
+            background: linear-gradient(90deg, #0073e6, #0022e6);
+        }
+        body.light-mode header p {
+            color: #333;
+        }
+
+        /* Text Glow Animation */
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 20px #00e6e6; }
+            100% { text-shadow: 0 0 40px #0073e6; }
+        }
+
+        /* Links Styling */
+        .contact a {
+            color: #00e6e6;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .contact a:hover {
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        body.light-mode .contact a {
+            color: #0073e6;
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
+            color: #00e6e6;
+            position: relative;
+            overflow: hidden;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #00e6e6;
+            left: 0;
+            bottom: -5px;
+            transform: translateX(-100%);
+            animation: slideInRight 0.5s forwards;
+        }
+        h2:hover {
+            text-shadow: 0 0 10px #00e6e6, 0 0 20px #0073e6;
+            transition: text-shadow 0.5s ease;
+        }
+
+        /* Slide In Animation for Headings */
+        @keyframes slideInRight {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        /* Accordion for Projects Section */
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            outline: none;
+            text-align: left;
+            background: #0073e6;
+            color: white;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #005bb5;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            padding-left: 20px;
+            color: #ccc;
+        }
+        body.light-mode .accordion {
+            background-color: #333;
+            color: #fff;
+        }
+        body.light-mode .accordion-content {
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer p a {
+            color: #00e6e6;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        footer p a:hover {
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        body.light-mode footer p a {
+            color: #0073e6;
+        }
+
+        /* Dark Mode Toggle Button */
+        #dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #dark-mode-toggle:hover {
+            background-color: #00e6e6;
+            transform: scale(1.05);
+        }
+        body.light-mode #dark-mode-toggle {
+            background-color: #333;
+        }
+
+        /* Image Styling */
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <header>
+        <h1>Faizan-ul-Hassan</h1>
+        <p>Aspiring Cyber Security Professional</p>
+        <div class="contact">
+            <p><a href="mailto:faizanulhassan6565@gmail.com">faizanulhassan6565@gmail.com</a></p>
+            <p>+92 314 2028108</p>
+            <p>Khurrianwala, Faisalabad</p>
+            <p><a href="https://www.linkedin.com/in/faizan-ul-hassan-58b455271" target="_blank">LinkedIn Profile</a></p>
+            <p><a href="https://github.com/Def-Warrior" target="_blank">GitHub Profile</a></p>
+        </div>
+    </header>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Cyber Security</strong></p>
+        <p>NFC & IER, Faisalabad</p>
+        <p>GPA: 2.97 (3rd Semester Ongoing)</p>
+    </section>
+
+    <!-- Professional Summary -->
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            Dedicated professional with a strong foundation in networking and talent acquisition, bringing experience from two tech companies.
+            Passionate about connecting talent with opportunity and committed to continuous learning in the tech space. Actively seeking a
+            cyber security role while enhancing skills in both GRC and technical areas of cyber security and tool development.
+        </p>
+    </section>
+
+    <!-- Training and Certifications -->
+    <section id="certifications">
+        <h2>Training and Certifications</h2>
+        <ul>
+            <li>IBM Penetration Testing, Incident Response, and Forensics – Certificate</li>
+            <li>Google Cyber Security Professional – 8 courses completed</li>
+            <li>Cisco Networking Badge</li>
+            <li>Cisco Packet Tracer – Built a virtual network for real-life implementation</li>
+            <li>Cisco Certified Ethical Hacker (CEH)</li>
+            <li>Hack The Box – Linux Fundamentals</li>
+            <li>NAVTTC & Tech Hub Faisalabad – Certified Hacking Forensic Investigator (CHFI)</li>
+            <li>Udemy:
+                <ul>
+                    <li>Hack Android using RAT</li>
+                    <li>Advanced IT Troubleshooting for Helpdesk Support Technicians</li>
+                    <li>Applied Cryptography with Python</li>
+                </ul>
+            </li>
+            <li>Hackathon: 3-day workshop covering CTF, Red Team live project, quiz competition, Blue Teaming, Linux.</li>
+        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="technical-skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Project Management</li>
+                    <li>Vulnerability Assessment and Penetration Testing (VAPT)</li>
+                    <li>Security Incident Response</li>
+                    <li>Red Teaming</li>
+                    <li>Programming: C++ (Intermediate), Java (OOP) (Intermediate), Python (Intermediate)</li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Leadership</li>
+                    <li>Teamwork</li>
+                    <li>Adaptability</li>
+                    <li>Problem-Solving</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section id="tools">
+        <h2>Tools</h2>
+        <ul>
+            <li>Wireshark, Nmap, Snort, Metasploit, Hashcat, Empire, Burp Suite, Mimikatz</li>
+            <li>PowerSploit, Veil-Evasion, SQLMap, Aircrack-ng, Nikto, SET, SharpShooter</li>
+            <li>The Harvester, Lynis, Nessus, TerminatorZ, Burp Suite Pro, OSINT Tools, Phishing Tools</li>
+        </ul>
+    </section>
+
+    <!-- Industry Experience -->
+    <section id="experience">
+        <h2>Industry Experience</h2>
+        <div class="job">
+            <h3>1: Penetration Testing Intern</h3>
+            <p><strong>KaiRiz Cyber Technologies Pvt Ltd</strong> (Remote)</p>
+            <p>Punjab, Faisalabad | Duration: 1 Month</p>
+            <p>Key Responsibilities:</p>
+            <ul>
+                <li>Conducted footprinting and information gathering for targeted systems and web applications.</li>
+                <li>Performed vulnerability assessments and created a comprehensive list of vulnerabilities in applications, servers, and systems.</li>
+                <li>Applied various testing tools under supervision, learning about the latest hacking and testing methods.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>2: Red Team and Custom Tool Development Intern</h3>
+            <p><strong>ITSOLERA Pvt Ltd</strong> (Remote)</p>
+            <p>Islamabad, Capital | Duration: 3 Months</p>
+            <p>Key Responsibilities:</p>
+            <ul>
+                <li>Enhanced technical skills through custom tool development for comprehensive penetration testing.</li>
+                <li>Learned security incident response to detect, analyze, and mitigate cyber threats.</li>
+                <li>Gained extensive experience in Red Teaming to evaluate and enhance organizational defense mechanisms.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>3: Security Analyst</h3>
+            <p><strong>Soft Savy Pvt Ltd</strong> (Remote)</p>
+            <p>Faisalabad | Duration: Current</p>
+            <p>Key Responsibilities:</p>
+            <ul>
+                <li>Monitored and analyzed real-time security incidents and network traffic for any anomalies.</li>
+                <li>Assisted in forensic investigations of security breaches and contributed to mitigation efforts.</li>
+                <li>Collaborated with senior security engineers to enhance the company's overall network defenses.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Practical Projects -->
+    <section id="projects">
+        <h2>Practical Projects</h2>
+        <ul>
+            <li><strong>1. Penetration Test on ecomsolutionsplus Web Application</strong>: Conducted a comprehensive penetration test on the ecomsolutionsplus web application, identifying critical vulnerabilities that could be exploited by attackers. The project involved both automated and manual testing techniques using tools like Burp Suite, OWASP ZAP, and SQLMap. Vulnerability analysis included common web application flaws such as SQL injection, Cross-Site Scripting (XSS), and improper authentication mechanisms. After identifying the weaknesses, I provided detailed remediation strategies, improving the application's overall security and minimizing potential threats.</li>
+            <li><strong>2. Security Assessment and Hardening of a Small Business Network</strong>: Performed a thorough security assessment for a small business network, identifying misconfigurations and weak points in their infrastructure. This involved network mapping using Nmap, vulnerability scans with Nessus, and manual inspection of firewall configurations. Once vulnerabilities were identified, I implemented measures such as firewall rules, network segmentation, and secure access policies. The final deliverable included a full security audit report documenting the vulnerabilities, steps taken to mitigate them, and recommendations for future improvements. This project greatly enhanced the network's resilience against common cyber threats.</li>
+            <li><strong>3. Automated Digital Forensics Tool – CybroX</strong>: Developed CybroX, an advanced automated digital forensics tool during my internship at ITSOLERA. The tool was designed to perform hardware data acquisition, network traffic acquisition, and AI-based malware detection. CybroX can recover data from compromised systems, ensuring minimal data loss in the event of an incident. The AI-powered malware detection module can identify sophisticated threats in real-time. Additionally, CybroX generates detailed PDF reports summarizing all forensic data, including file recovery, network logs, and malware analysis, making it a comprehensive tool for both incident response and post-incident analysis.</li>
+            <li><strong>4. IMSI Catcher Development</strong> (Not Open Source): Participated in the development of an IMSI catcher, a device used to intercept mobile communications for research purposes. This project involved simulating mobile network vulnerabilities to demonstrate the potential risks of GSM (Global System for Mobile Communications) networks. The IMSI catcher can capture International Mobile Subscriber Identity (IMSI) numbers from nearby devices, helping to analyze mobile traffic patterns. My role focused on testing the tool’s capability in controlled environments and documenting potential vulnerabilities in mobile network protocols that can be exploited by attackers.</li>
+            <li><strong>5. Router Pilot</strong> (Not Open Source): Developed a custom router simulation tool called Router Pilot to analyze network traffic under different scenarios. The tool is capable of simulating various network configurations and capturing real-time traffic to identify bottlenecks and routing issues. Router Pilot helped in diagnosing complex routing problems by generating detailed network logs and traffic flow charts. This tool is not open-source due to its specific implementation for private testing environments. It allowed for extensive experimentation with routing protocols such as OSPF, BGP, and static routing in controlled network environments.</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p><a href="mailto:faizanulhassan6565@gmail.com">faizanulhassan6565@gmail.com</a></p>
+</footer>
+</body>
+</html>
