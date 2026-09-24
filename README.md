@@ -1,42 +1,42 @@
-Faizan-ul-Hassan's Cybersecurity Portfolio
-Overview
-This repository contains my cybersecurity portfolio, showcasing my expertise and projects in the field of cybersecurity. It includes various projects related to penetration testing, incident response, tool development, and more.
+# Faizan Ul Hassan — Offensive Security Researcher
 
-Table of Contents
-Professional Summary
-Certifications
-Skills
-Tools
-Projects
-Contact Information
-Professional Summary
-I am an aspiring cybersecurity professional with hands-on experience in penetration testing, Red Teaming, and incident response. With a solid foundation in networking and security tools, I am passionate about enhancing security measures and combating cyber threats.
+Source for my portfolio site. I'm a Security Researcher at AQSEC in Lahore, Pakistan, running internal network penetration tests and red team engagements, and an independent researcher on HackerOne.
 
-Certifications
-IBM Penetration Testing, Incident Response, and Forensics
-Google Cyber Security Professional (8 courses completed)
-Cisco Certified Ethical Hacker (CEH)
-Certified Hacking Forensic Investigator (CHFI)
-Hack The Box Linux Fundamentals
-Skills
-Technical Skills: Vulnerability Assessment, Penetration Testing (VAPT), Security Incident Response, Red Teaming
-Programming: C++, Java (OOP), Python
-Soft Skills: Communication, Leadership, Problem-Solving, Time Management
-Tools
-Wireshark, Nmap, Snort, Metasploit, Hashcat, Burp Suite, Empire, Mimikatz
-Veil-Evasion, SQLMap, Aircrack-ng, The Harvester, Nessus, OSINT Tools
-Projects
-Penetration Test on ecomsolutionsplus Web Application: Conducted comprehensive tests to identify SQL injection, Cross-Site Scripting (XSS), and other web application vulnerabilities.
+## Highlights
 
-Security Assessment for a Small Business Network: Performed security hardening, vulnerability scans with Nessus, and provided a full audit report with remediation steps.
+- Validated and rewarded findings at RISCO Group, LoginRadius, Nordantech (€500 bounty), goBluebird and signageOS
+- Internal network and Active Directory testing, red team operations mapped to MITRE ATT&CK
+- Web application and API testing against the OWASP Top 10 and the OWASP Web Security Testing Guide
+- AI agent security: prompt injection, unsafe tool use, insecure output handling and data leakage
 
-CybroX - Automated Digital Forensics Tool: Developed a digital forensics tool for data recovery, network traffic acquisition, and AI-based malware detection.
+## Services
 
-IMSI Catcher Development: Assisted in the creation of a tool to demonstrate GSM network vulnerabilities and intercept mobile communications for research purposes.
+- Web application penetration testing
+- REST and GraphQL API security testing
+- Internal network and Active Directory assessments
+- AI chatbot and LLM agent security testing
+- Vulnerability assessment with NIST CSF, ISO 27001 or CIS Controls mapping
+- Reporting, fix validation and retesting
 
-Router Pilot: Created a custom tool for simulating network traffic and diagnosing routing problems using OSPF, BGP, and static routing.
+I only test systems the client owns or is authorized to test, under a written scope.
 
-Contact Information
-Email: faizanulhassan6565@gmail.com
-LinkedIn: Faizan-ul-Hassan
-GitHub: Def-Warrior
+## Projects
+
+- **CyberOX** — Python command-line digital forensics tool with AI-based malware detection, network traffic capture, disk recovery and report generation
+- **SubHunter** — subdomain enumeration and takeover detection pipeline
+- **AI Bug Hunter Framework** — AI-assisted workflows for vulnerability discovery and misconfiguration detection
+
+## Certifications
+
+- DCJSP — Defronix Certified Junior Security Professional
+- IBM — Penetration Testing, Incident Response and Forensics
+- Google — Cybersecurity Professional Certificate courses
+- NAVTTC — Digital Forensics and Cybersecurity
+- Cisco — Networking Basics
+
+## Contact
+
+- Email: faizan@aqsec.co
+- LinkedIn: [faizan-ul-hassan-offensive-security](https://www.linkedin.com/in/faizan-ul-hassan-offensive-security)
+- Upwork: [Hire me on Upwork](https://www.upwork.com/freelancers/~010355a526faf8e342)
+- GitHub: [Def-Warrior](https://github.com/Def-Warrior)
